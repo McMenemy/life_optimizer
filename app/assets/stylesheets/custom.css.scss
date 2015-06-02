@@ -71,6 +71,36 @@ p {
   }
 }
 
+/* dashboardfooter */
+
+#habit_logo {
+  float: right;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #20ac82;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: #a7e2c9;
+    text-decoration: none;
+  }
+}
+
+#data_logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #20ac82;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: #a7e2c9;
+    text-decoration: none;
+  }
+}
+
 /* footer */
 
 footer {
