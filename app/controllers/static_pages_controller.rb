@@ -13,4 +13,10 @@ class StaticPagesController < ApplicationController
   
   def contact
   end
+  
+  def habit_panel
+  end
+
+  def data_panel
+  end
 end

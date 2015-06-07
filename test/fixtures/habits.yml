@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  classification: MyString
+  completed: MyString
+  time_stamp: 2015-06-04 14:32:15
+  quantifier: 1
+  quantifier_unit: MyString
+  user_id: 
+
+two:
+  title: MyString
+  classification: MyString
+  completed: MyString
+  time_stamp: 2015-06-04 14:32:15
+  quantifier: 1
+  quantifier_unit: MyString
+  user_id: 
