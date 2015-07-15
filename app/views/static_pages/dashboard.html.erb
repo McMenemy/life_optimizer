@@ -1,17 +1,68 @@
 <% provide(:title, "Dashboard") %>
 <h1>Dashboard</h1>
-<div>
-<%= chart = LazyHighCharts::HighChart.new('graph') do |f|
-      f.title(:text => "Population vs GDP For 5 Big Countries [2009]")
-      f.xAxis(:categories => ["United States", "Japan", "China", "Germany", "France"])
-      f.series(:name => "GDP in Billions", :yAxis => 0, :data => [14119, 5068, 4985, 3339, 2656])
-      f.series(:name => "Population in Millions", :yAxis => 1, :data => [310, 127, 1340, 81, 65])
+
+<body>
+  <div style="float:left; width:49%">
+  <%= chart1 = LazyHighCharts::HighChart.new('graph') do |f|
+      f.title(:text => "[Placegolder] Top 5 Habits, Routines, or Enviromental Influences Positvely Correllated with Happiness")
+      f.xAxis(:categories => ["Habit 1", "Habit 2", "Habit 3", "Habit 4", "Habit 5"])
+      f.series(:name => "Habit", :yAxis => 0, :data => [14119, 5068, 4985, 3339, 2656])
+      f.series(:name => "Reported Self Happiness", :yAxis => 1, :data => [310, 127, 1340, 81, 65])
       f.yAxis [
-        {:title => {:text => "GDP in Billions", :margin => 70} },
-        {:title => {:text => "Population in Millions"}, :opposite => true},
+        {:title => {:text => "Habit", :margin => 70} },
+        {:title => {:text => "Reported Self Happiness"}, :opposite => true},
       ]
-      f.legend(:align => 'right', :verticalAlign => 'top', :y => 75, :x => -50, :layout => 'vertical',)
-      f.chart({:defaultSeriesType=>"column"})
+      f.legend(:align => 'center', :verticalAlign => 'bottom', :layout => 'horizontal',)
+      f.chart({:defaultSeriesType=>"column", spacingBottom: 40})
     end
-    high_chart("orders_chart", chart) %>
-</div>
+    high_chart("chart1", chart1) %>
+  </div>
+
+  <div style="float:right; width:49%">
+  <%= chart2 = LazyHighCharts::HighChart.new('graph') do |f|
+      f.title(:text => "[Placegolder] Top 5 Habits, Routines, or Enviromental Influences Negatively Correllated with Happiness")
+      f.xAxis(:categories => ["Habit 1", "Habit 2", "Habit 3", "Habit 4", "Habit 5"])
+      f.series(:name => "Habit", :yAxis => 0, :data => [14119, 5068, 4985, 3339, 2656])
+      f.series(:name => "Reported Self Happiness", :yAxis => 1, :data => [310, 127, 1340, 81, 65])
+      f.yAxis [
+        {:title => {:text => "Habit", :margin => 70} },
+        {:title => {:text => "Reported Self Happiness"}, :opposite => true},
+      ]
+      f.legend(:align => 'center', :verticalAlign => 'bottom', :layout => 'horizontal',)
+      f.chart({:defaultSeriesType=>"column", spacingBottom: 40})
+    end
+    high_chart("chart2", chart2) %>
+  </div>
+  
+    <div style="float:left; width:49%">
+  <%= chart3 = LazyHighCharts::HighChart.new('graph') do |f|
+      f.title(:text => "[Placegolder] Top 5 Habits, Routines, or Enviromental Influences Positvely Correllated with Happiness")
+      f.xAxis(:categories => ["Habit 1", "Habit 2", "Habit 3", "Habit 4", "Habit 5"])
+      f.series(:name => "Habit", :yAxis => 0, :data => [14119, 5068, 4985, 3339, 2656])
+      f.series(:name => "Reported Self Happiness", :yAxis => 1, :data => [310, 127, 1340, 81, 65])
+      f.yAxis [
+        {:title => {:text => "Habit", :margin => 70} },
+        {:title => {:text => "Reported Self Happiness"}, :opposite => true},
+      ]
+      f.legend(:align => 'center', :verticalAlign => 'bottom', :layout => 'horizontal',)
+      f.chart({:defaultSeriesType=>"column", spacingBottom: 40})
+    end
+    high_chart("chart3", chart3) %>
+  </div>
+
+  <div style="float:right; width:49%">
+  <%= chart4 = LazyHighCharts::HighChart.new('graph') do |f|
+      f.title(:text => "[Placegolder] Top 5 Habits, Routines, or Enviromental Influences Negatively Correllated with Happiness")
+      f.xAxis(:categories => ["Habit 1", "Habit 2", "Habit 3", "Habit 4", "Habit 5"])
+      f.series(:name => "Habit", :yAxis => 0, :data => [14119, 5068, 4985, 3339, 2656])
+      f.series(:name => "Reported Self Happiness", :yAxis => 1, :data => [310, 127, 1340, 81, 65])
+      f.yAxis [
+        {:title => {:text => "Habit", :margin => 70} },
+        {:title => {:text => "Reported Self Happiness"}, :opposite => true},
+      ]
+      f.legend(:align => 'center', :verticalAlign => 'bottom', :layout => 'horizontal',)
+      f.chart({:defaultSeriesType=>"column", spacingBottom: 40})
+    end
+    high_chart("chart4", chart4) %>
+  </div>
+</body>
