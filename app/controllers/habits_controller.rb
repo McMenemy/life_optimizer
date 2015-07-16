@@ -6,12 +6,13 @@ class HabitsController < ApplicationController
   end
   
   def create
-  	@habits = current_user.habits.new(habit_params)
+  	@habit = current_user.habits.new(habit_params)
     if @habit.save
       flash[:success] = "Habit created!"
       redirect_to root_url
     else
-      render 'static_pages/home'
+      flash[:danger] = "Habit creation failed: This is a known bug being worked on"
+      redirect_to root_url
     end
   end
 
