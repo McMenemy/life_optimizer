@@ -1,10 +1,10 @@
 class CreateHabits < ActiveRecord::Migration
+  
   def change
     create_table :habits do |t|
       t.string :title
       t.string :classification
       t.string :completed
-      t.datetime :time_stamp
       t.integer :quantifier
       t.string :quantifier_unit
       t.references :user, index: true, foreign_key: true
