@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 20150604143215) do
     t.string   "title"
     t.string   "classification"
     t.string   "completed"
-    t.datetime "time_stamp"
     t.integer  "quantifier"
     t.string   "quantifier_unit"
     t.integer  "user_id"
@@ -25,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150604143215) do
     t.datetime "updated_at",      null: false
   end
 
+  add_index "habits", ["user_id", "created_at"], name: "index_habits_on_user_id_and_created_at"
   add_index "habits", ["user_id"], name: "index_habits_on_user_id"
 
   create_table "users", force: :cascade do |t|
