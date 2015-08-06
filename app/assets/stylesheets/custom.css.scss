@@ -237,3 +237,12 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+/* Home Page */
+.jumbotron {
+    /* add bootstrap jumbotron background image */
+    background: url("umbrella.jpg");
+    background-size: 100% 100%;
+    /* change bootstrap jumbotron text color */
+    color: #FFF;
+}
