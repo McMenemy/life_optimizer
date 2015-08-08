@@ -4,8 +4,11 @@
   <h2>
     Optimize Your Life
   </h2>
-
-  <%= link_to "Sign up now", signup_path, class: "btn btn-lg btn-primary" %>
+  
+  <% if !(logged_in?) %>
+    <%= link_to "Sign up now", signup_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
+  
 </div>
 
 <div>
