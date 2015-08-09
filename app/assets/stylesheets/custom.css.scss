@@ -241,8 +241,12 @@ input {
 /* Home Page */
 .jumbotron {
     /* add bootstrap jumbotron background image */
-    background: url("umbrella.jpg");
-    background-size: 100% 100%;
+    background-image: url("umbrella.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding: 13.333% 0% 53.333% 0%;
     /* change bootstrap jumbotron text color */
     color: #FFF;
 }
