@@ -16,10 +16,10 @@
       <% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
-      <% if full_title(yield(:title)) == 'Dashboard | Ananda' || full_title(yield(:title)) == 'Data Panel | Ananda' || full_title(yield(:title)) == 'Habit Panel | Ananda' %> 
+      <% if full_title(yield(:title)) == 'Dashboard | Coeus' || full_title(yield(:title)) == 'Data Panel | Coeus' || full_title(yield(:title)) == 'Habit Panel | Coeus' %> 
         <%= render 'layouts/dashboardfooter' %>
       <% end %> 
-      <% if full_title(yield(:title)) == ('Data Panel | Ananda' ||  'Habit Panel | Ananda') %>
+      <% if full_title(yield(:title)) == ('Data Panel | Coeus' ||  'Habit Panel | Coeus') %>
         <%= render 'layouts/dashboardfooter' %>
       <% end %> 
       <%= debug(params) if Rails.env.development? %> 
