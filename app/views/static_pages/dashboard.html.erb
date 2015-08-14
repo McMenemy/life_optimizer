@@ -1,11 +1,11 @@
 <% provide(:title, "Dashboard") %>
 <h1>Dashboard</h1>
 
-<!-- https://github.com/dbackowski/novus-nvd3-rails -->
+<!-- https://github.com/dbackowski/novus-nvd3-railsgit  -->
 <body>
   <div style="float:left; width:49%">
   <%= chart1 = LazyHighCharts::HighChart.new('graph') do |f|
-      f.title(:text => "[Placegolder] Top 5 Habits, Routines, or Enviromental Influences Positvely Correllated with Happiness")
+      f.title(:text => "[Placegolder] Top 5 Habits, Routines, or Enviromental Influences Negatively Correllated with Happiness")
       f.xAxis(:categories => ["Habit 1", "Habit 2", "Habit 3", "Habit 4", "Habit 5"])
       f.series(:name => "Habit", :yAxis => 0, :data => [14119, 5068, 4985, 3339, 2656])
       f.series(:name => "Reported Self Happiness", :yAxis => 1, :data => [310, 127, 1340, 81, 65])
