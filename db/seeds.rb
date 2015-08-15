@@ -26,11 +26,13 @@ User.create!(name:  "Example User",
                activated_at: Time.zone.now)
 end
 
-Habit.create(title: "testing",
+20.times do |n|
+    Habit.create(title: "testing",
              classification: "positive",
              completed: 'yes',
              quantifier: 10,
              quantifier_unit: 'pages',
              user_id: 1,
              created_at: Time.zone.now,
-             updated_at: Time.zone.now)
+             updated_at: Time.zone.now + n * 86400)
+end
