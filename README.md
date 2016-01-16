@@ -1,3 +1,3 @@
-Unfinished rails app to track habits.
+# Ruby on Rails Template
 
-A few customizations to Michael Hartl's Ruby on Rails guide (https://www.railstutorial.org/).
+Learning Ruby on Rails using Michael Hartl's guide (https://www.railstutorial.org/).
