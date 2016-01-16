@@ -1,3 +1,3 @@
 # Ruby on Rails Template
 
-Learning Ruby on Rails using Michael Hartl's guide (https://www.railstutorial.org/).
+Ruby on Rails template based on Michael Hartl's guide (https://www.railstutorial.org/) with a few customizations. 
